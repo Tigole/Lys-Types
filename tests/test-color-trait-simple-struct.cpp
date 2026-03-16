@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "lys-color-trait.hpp"
+#include "lys-color-traits.hpp"
 #include "lys-color.hpp"
 
 TEST(Color, _)

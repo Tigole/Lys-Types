@@ -2,7 +2,7 @@
 
 #include <cstdint>
 
-#include "lys-vec2-trait.hpp"
+#include "lys-vec2-traits.hpp"
 
 struct SimpleVec2
 {
