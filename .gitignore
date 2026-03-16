@@ -39,3 +39,7 @@
 
 # debug information files
 *.dwo
+
+build/
+.xmake/
+.vscode/compile_commands.json
