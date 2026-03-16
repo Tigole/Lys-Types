@@ -11,20 +11,20 @@ struct ComplexVec2
     int y;
 };
 
-TEST(Vec2Trait, ComplexStruct)
+TEST(Vec2Traits, ComplexStruct)
 {
-    ComplexVec2 vec = lys::Vec2Trait<ComplexVec2>::Construct<int>(22, 34);
+    ComplexVec2 vec = lys::Vec2Traits<ComplexVec2>::Construct<int>(22, 34);
 
     EXPECT_EQ(vec.x, 22);
     EXPECT_EQ(vec.y, 34);
-    EXPECT_EQ(lys::Vec2Trait<ComplexVec2>::x<int>(vec), 22);
-    EXPECT_EQ(lys::Vec2Trait<ComplexVec2>::y<int>(vec), 34);
+    EXPECT_EQ(lys::Vec2Traits<ComplexVec2>::x<int>(vec), 22);
+    EXPECT_EQ(lys::Vec2Traits<ComplexVec2>::y<int>(vec), 34);
 
-    lys::Vec2Trait<ComplexVec2>::x<int>(vec) = 4;
+    lys::Vec2Traits<ComplexVec2>::x<int>(vec) = 4;
     EXPECT_EQ(vec.x, 4);
-    EXPECT_EQ(lys::Vec2Trait<ComplexVec2>::x<int>(vec), 4);
+    EXPECT_EQ(lys::Vec2Traits<ComplexVec2>::x<int>(vec), 4);
 
-    lys::Vec2Trait<ComplexVec2>::y<int>(vec) = 56;
+    lys::Vec2Traits<ComplexVec2>::y<int>(vec) = 56;
     EXPECT_EQ(vec.y, 56);
-    EXPECT_EQ(lys::Vec2Trait<ComplexVec2>::y<int>(vec), 56);
+    EXPECT_EQ(lys::Vec2Traits<ComplexVec2>::y<int>(vec), 56);
 }

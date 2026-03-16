@@ -5,7 +5,7 @@ namespace lys
 {
 
 template<typename Vec2Type>
-struct Vec2Trait
+struct Vec2Traits
 {
     template<typename T>
     static constexpr Vec2Type Construct(T x, T y)
