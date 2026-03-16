@@ -1,4 +1,4 @@
-set_project("Lys-TiledMapLoading")
+set_project("lys-types")
 set_version("0.0.0")
 add_rules("mode.debug", "mode.release")
 
