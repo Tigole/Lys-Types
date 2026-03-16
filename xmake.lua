@@ -10,6 +10,7 @@ set_warnings("all", "error")
 target("lys-types")
     set_kind("headeronly")
     add_includedirs("include", {public = true})
+    add_headerfiles("include/**.hpp", {public = true})
 
 for _, testfile in ipairs(os.files("tests/**.cpp")) do 
     local name = path.basename(testfile)
