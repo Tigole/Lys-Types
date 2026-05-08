@@ -136,10 +136,10 @@ struct RectExTraits
     }
 
     template<typename T>
-    static inline bool Contains(const RectType& r1, const RectType& r2)
+    static inline bool Contains(const RectType& container, const RectType& contained)
     {
-        const bool x = left<T>(r1) <= left<T>(r2) && right<T>(r1) >= right<T>(r2);
-        const bool y = top<T>(r1) <= top<T>(r2) && bottom<T>(r1) >= bottom<T>(r2);
+        const bool x = left<T>(container) <= left<T>(contained) && right<T>(container) >= right<T>(contained);
+        const bool y = top<T>(container) <= top<T>(contained) && bottom<T>(container) >= bottom<T>(contained);
         return x && y;
     }
 };
